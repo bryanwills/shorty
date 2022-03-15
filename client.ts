@@ -1,3 +1,5 @@
+// This was taken from a Prisma help file/tutorial from their website
+
 import { Prisma, PrismaClient } from "@prisma/client";
 
 declare global {

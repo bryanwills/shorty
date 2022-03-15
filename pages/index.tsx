@@ -18,7 +18,7 @@ export default function Home() {
         <input
           {...register("link")}
           type="text"
-          className="bg-gray-200 w-full px-2 h-12 placeholder-gray-600 mt-8 focus:outline-none focus:ring-2 focus:ring-indigo-900 rounded-lg"
+          className="bg-gray-200 w-full px-2 h-12 placeholder-gray-600 mt-6 focus:outline-none focus:ring-2 focus:ring-indigo-900 rounded-lg"
           placeholder="Enter URL to shorten" />
         <button type="submit" className="mt-6 px-4 text-xl py-2 bg-indigo-700 hover:bg-indigo-500 text-white rounded-lg w-full h-12">Shrink</button>
         </form>
