@@ -1,25 +1,8 @@
-import { useForm } from "react-hook-form";
-import axios, { AxiosRequestConfig } from "axios";
+import AddLinkForm from "../components/AddLinkForm";
+import {useState} from "react";
 
 export default function Home() {
-
-  const { register, handleSubmit } = useForm();
-
-  const onFormSubmit = async (values) => { //used example from react-hook-form package website
-    console.log(values);
-    // setup API to allow data to be sent through
-    const config: AxiosRequestConfig = {
-      url: "/api/addLink",
-      headers: {
-        "Content-Type": "application/json"
-      },
-      data: values,
-      method: "post",
-    }
-
-    const res = await axios(config);
-    console.log(res); //log the response
-  }
+  const [linkId, setLinkId] = useState(null);
 
   return (
     <div className="h-screen w-screen flex justify-center items-center bg-indigo-700">
@@ -27,16 +10,17 @@ export default function Home() {
         <div className="px-4 sm:px-6 lg:px-8 py-20">
         <h1 className="font-bold text-4xl text-gray-900">Shorty - URL Shortener</h1>
         <h2 className="mt-4 text-l text-gray-900">URL Shortener built with NextJS, TypeScript, Prisma, MySQL and TailwindCSS</h2>
-        <form onSubmit={handleSubmit(onFormSubmit)}>
-        <input
-          {...register("link")}
-          type="text"
-          className="bg-gray-200 w-full px-2 h-12 placeholder-gray-600 mt-6 focus:outline-none focus:ring-2 focus:ring-indigo-900 rounded-lg"
-          placeholder="Enter URL to shorten" />
-        <button type="submit" className="mt-6 px-4 text-xl py-2 bg-indigo-700 hover:bg-indigo-500 text-white rounded-lg w-full h-12">Shrink</button>
-        </form>
+        <AddLinkForm setLinkId={setLinkId}/>
+        {linkId && (
+          <div className="w-full rounded-full items-center">
+              <div className="bg-indigo-600 px-4 py-4 mt-4 text-center w-1/2 rounded-lg text-white">
+                <a href={`http://bryanwills.xyz:3000/${linkId}`}>{`http://bryanwills.xyz:3000/${linkId}`}</a>
+              </div>
+          </div>
+        )}
+
         </div>
       </div>
     </div>
-  )
+  );
 }
