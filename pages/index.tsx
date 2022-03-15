@@ -1,11 +1,24 @@
 import { useForm } from "react-hook-form";
+import axios, { AxiosRequestConfig } from "axios";
 
 export default function Home() {
 
   const { register, handleSubmit } = useForm();
 
-  const onFormSubmit = async (values) => {
+  const onFormSubmit = async (values) => { //used example from react-hook-form package website
     console.log(values);
+    // setup API to allow data to be sent through
+    const config: AxiosRequestConfig = {
+      url: "/api/addLink",
+      headers: {
+        "Content-Type": "application/json"
+      },
+      data: values,
+      method: "post",
+    }
+
+    const res = await axios(config);
+    console.log(res); //log the response
   }
 
   return (
