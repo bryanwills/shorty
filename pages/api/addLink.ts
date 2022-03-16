@@ -23,7 +23,7 @@ export default async (req, res) => {
         // if the linkid exists, display the linkid on the page
     }
     // if not, then create a linkId
-    const id = Math.random().toString(36).substr(2,6);
+    const id = Math.random().toString(36).substr(2,8);
     try {
         const addLink = await prisma.link.create({
             data: {
