@@ -1,4 +1,4 @@
-import { exists } from "fs";
+// import { exists } from "fs";
 import { idText } from "typescript";
 import prisma from "../../client";
 
@@ -13,7 +13,7 @@ export default async (req, res) => {
     // check for existingLink
     const existingLink = await prisma.link.findUnique({
         where: {
-            url: link
+            url: link,
         }
     })
     console.log(existingLink);
