@@ -12,7 +12,7 @@ export const getServerSideProps = async ({ params }) => {
         if(url) {
             return {
                 redirect: {
-                    destination: url,
+                    destination: url.url,
                 },
             };
         }
