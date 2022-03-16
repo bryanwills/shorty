@@ -39,12 +39,16 @@ const AddLinkForm = ({ setLinkId }) => {
             required: {
               value: true,
               message: "You must provide a URL",
+            },
+            pattern: {
+              value: RegExp(`((http|https://)(www.)?[a-zA-Z0-9@:%._\\+~#?&//=]{2,256}\\.[a-zA-Z0-9@:%._\\+~#?&//=]*)`),
+              message: "You must submit a valid URL"
             }
           })}
           type="text"
-          className="bg-gray-200 w-full px-2 h-12 placeholder-gray-600 mt-6 focus:outline-none focus:ring-2 focus:ring-indigo-900 rounded-lg"
+          className={`bg-gray-200 w-full px-2 h-12 placeholder-gray-600 mt-6 focus:outline-none focus:ring-2 focus:ring-indigo-900 rounded-lg ${errors?.link ? "ring-2 ring-red-500": "null"}`}
           placeholder="Enter URL to shorten" />
-          <div>
+          <div className="mt-2 text-red-600 text-sm">
             {errors?.link?.message}
           </div>
         <button
