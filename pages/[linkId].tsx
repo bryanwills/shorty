@@ -8,15 +8,16 @@ export const getServerSideProps = async ({ params }) => {
                 linkId: params.linkId,
             },
         });
-        if (url) {
+        // if there is a valid URL in the database, redirect to that site.
+        if(url) {
             return {
                 redirect: {
                     destination: url.url,
                 },
             };
         }
-
-        if (!url) {
+        //if there is no valid URL, redirect to the homepage to shrink a URL
+        if(!url) {
             return {
                 redirect: {
                     destination: "http://bryanwills.xyz:3000",
