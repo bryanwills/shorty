@@ -18,7 +18,7 @@ const AddLinkForm = ({ setLinkId }) => {
 
     const res = await axios(config);
     if(res.status === 200) {
-      setLinkId(res.data);
+      setLinkId(res.data.link);
     }
     //console.log(res); //log the response
   };

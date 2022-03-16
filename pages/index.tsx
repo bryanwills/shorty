@@ -1,5 +1,5 @@
 import AddLinkForm from "../components/AddLinkForm";
-import {useState} from "react";
+import { useState } from "react";
 
 export default function Home() {
   const [linkId, setLinkId] = useState(null);
@@ -10,7 +10,7 @@ export default function Home() {
         <div className="px-4 sm:px-6 lg:px-8 py-20">
         <h1 className="font-bold text-4xl text-gray-900">Shorty - URL Shortener</h1>
         <h2 className="mt-4 text-l text-gray-900">URL Shortener built with NextJS, TypeScript, Prisma, MySQL and TailwindCSS</h2>
-        <AddLinkForm setLinkId={setLinkId}/>
+        <AddLinkForm setLinkId={setLinkId} />
         {linkId && (
           <div className="w-full rounded-full items-center">
               <div className="bg-indigo-600 px-4 py-4 mt-4 text-center w-1/2 rounded-lg text-white">
@@ -18,7 +18,6 @@ export default function Home() {
               </div>
           </div>
         )}
-
         </div>
       </div>
     </div>
