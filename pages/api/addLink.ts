@@ -18,12 +18,22 @@ export default async (req, res) => {
     })
     console.log(existingLink);
 
+    // make a const generateId (how long(length), how many characters sent back)
+
+
+    const generateId = (n,l) => {
+        return Math.random().toString(n).substring(2,l)
+    }
+
     if(existingLink) {
         return res.status(200).json({ link: existingLink.linkId });
         // if the linkid exists, display the linkid on the page
     }
     // if not, then create a linkId
-    const id = Math.random().toString(36).substr(2,8);
+    //total shortened URLs from db
+    //checker reads db,
+    const id = generateId(36,8)
+    //const id = Math.random().toString(36).substring(2,8);
     try {
         const addLink = await prisma.link.create({
             data: {
