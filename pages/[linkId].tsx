@@ -21,7 +21,7 @@ export const getServerSideProps = async ({ params }) => {
         if(!url) {
             return {
                 redirect: {
-                    destination: "http://bryanwills.xyz:3000",
+                    destination: "http://bryanwills.me",
                 },
             };
         }
@@ -29,7 +29,7 @@ export const getServerSideProps = async ({ params }) => {
             console.log(err);
             return {
                 redirect: {
-                    destination: "http://bryanwills.xyz:3000",
+                    destination: "http://bryanwills.me",
             },
         };
     }
