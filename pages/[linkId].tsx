@@ -1,4 +1,5 @@
 import React from "react";
+
 import prisma from "../client";
 
 export const getServerSideProps = async ({ params }) => {

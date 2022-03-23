@@ -1,5 +1,5 @@
 // import { exists } from "fs";
-import { idText } from "typescript";
+// import { idText } from "typescript";
 import prisma from "../../client";
 
 export default async (req, res) => {
@@ -35,7 +35,7 @@ export default async (req, res) => {
     const id = generateId(36,8)
     //const id = Math.random().toString(36).substring(2,8);
     try {
-        const addLink = await prisma.link.create({
+        await prisma.link.create({
             data: {
                 url: link,
                 linkId: id, //generate link ID
