@@ -2,12 +2,12 @@
 
 
 ### Tech Stack Used
-NextJS<br/>
-TypeScript<br/>
-Prettier<br/>
-TailwindCSS<br/>
-PostCSS<br/>
-Autoprefixer<br/>
+### NextJS<br/>
+### TypeScript<br/>
+### Prettier<br/>
+### TailwindCSS<br/>
+### PostCSS<br/>
+### Autoprefixer<br/>
 
 ## Code Louisville Project for Front End Web Development Session 2 (JavaScript)
 
@@ -15,7 +15,7 @@ Autoprefixer<br/>
 
 ### This project also works by cloning the repo and running `npm run dev` and it will run locally.
 
-## To run this project locally on your computer follow the steps below.
+## To run this project locally on your computer follow the steps below in a terminal window.
 
 ```
 git clone https://github.com/bryanwills/shorty
