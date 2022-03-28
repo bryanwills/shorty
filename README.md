@@ -1,8 +1,5 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+### This is a Next.js project bootstrapped with `create-next-app`.
 
-## Code Louisville Project for Front End Web Development Session 2 (JavaScript)
-
-This is a URL shortener project.
 
 ### Tech Stack Used
 NextJS
@@ -11,6 +8,11 @@ Prettier
 TailwindCSS
 PostCSS
 Autoprefixer
+
+## Code Louisville Project for Front End Web Development Session 2 (JavaScript)
+
+### This is a URL shortener project created using TypeScript, NextJS, and TailwindCSS.
+
 
 ## Getting Started
 
