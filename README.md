@@ -2,12 +2,12 @@
 
 
 ### Tech Stack Used
-### NextJS<br/>
-### TypeScript<br/>
-### Prettier<br/>
-### TailwindCSS<br/>
-### PostCSS<br/>
-### Autoprefixer<br/>
+- NextJS<br/>
+- TypeScript<br/>
+- Prettier<br/>
+- TailwindCSS<br/>
+- PostCSS<br/>
+- Autoprefixer<br/>
 
 ## Code Louisville Project for Front End Web Development Session 2 (JavaScript)
 
