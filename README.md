@@ -28,6 +28,8 @@ npm install
 npm run dev
 ```
 
+### Then navigate to http://localhost:3000 in browser, if cloning repo
+
 ## Additional information.
 ### Running `npx prisma studio` will start a session on http://localhost:5555 will show all the database entries from the generation of a linkId.
 ### You can also access this from bryanwills.xyz:5555 as well.
