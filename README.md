@@ -28,12 +28,9 @@ npm install
 npm run dev
 ```
 
-### Then navigate to http://localhost:3000 in browser, if cloning repo
+### Then navigate to [http://localhost:3000](http://localhost:3000) using your browser.
 
 ## Additional information.
-### Running `npx prisma studio` will start a session on http://localhost:5555 will show all the database entries from the generation of a linkId.
-### You can also access this from bryanwills.xyz:5555 as well.
-
-Open [http://localhost:3000](http://localhost:3000) using your browser.
+### Running `npx prisma studio` will start a session on http://localhost:5555 will show all the database entries from the generation of a linkId. This can also be accessed on bryanwills.xyz:5555 .
 
 ### I will continue to attempt to complete the build/deploy process so that everything is functional without the port number and will push another commit once that has been completed.
