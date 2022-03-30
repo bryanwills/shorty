@@ -28,7 +28,7 @@ npm install
 npm run dev
 ```
 
-### Additional information.
+## Additional information.
 ### Running `npx prisma studio` will start a session on http://localhost:5555 will show all the database entries from the generation of a linkId.
 ### You can also access this from bryanwills.xyz:5555 as well.
 
