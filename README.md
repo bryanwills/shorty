@@ -41,4 +41,4 @@ npm run dev
 * Develop your project using a common JavaScript framework. I used NextJS and TypeScript to create this project which does use React.
 * Create a web server with at least one route. I have built a dynamic route using [linkId].js will show the same information for any URL that is shortened. Used axios package to complete this.
 
-### Side note: I did ask second to last class if my project met all the requirements from Isaac, Alan and even Don chimed in and said it passed :) 
+### Side note: I did ask second to last class if my project met all the requirements from Isaac, Alan and even Don chimed in and said it passed :smiley:
