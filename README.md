@@ -38,7 +38,7 @@ npm run dev
 * Retrieve data from an API and display this data in your app. This was completed by taking a valid URL and creating a linkId to shorten the URL and display a new URL that is shortened and has the linkId for the user to click on.
 * Implement a regex function  to validate a URL is in the correct format.
 * Create a form and save the values. I take a valid URL and shorten it using a database and display the shortened URL back for the user to click on which redirects them to the site they shortened.
-* Develop your project using a common JavaScript framework. I used NextJS and TypeScript to create this project which does use React.
+* Develop your project using a common JavaScript framework. I used NextJS and TypeScript to create this project which does use React. I also used TailwindCSS to style the pages!
 * Create a web server with at least one route. I have built a dynamic route using [linkId].js will show the same information for any URL that is shortened. Used axios package to complete this.
 
 ### Side note: I did ask second to last class if my project met all the requirements from Isaac, Alan and even Don chimed in and said it passed :smiley:
