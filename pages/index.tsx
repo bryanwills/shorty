@@ -15,8 +15,8 @@ export default function Home() {
         <AddLinkForm setLinkId={setLinkId} />
         {linkId && (
           <div className="w-full rounded-full items-center">
-              <div className="bg-indigo-600 px-4 py-4 mt-4 text-center w-1/2 rounded-lg text-white sm:max-w-xl">
-                <a href={`http://bryanwills.me/${linkId}`}>{`http://bryanwills.me/${linkId}`}</a>
+              <div className="bg-indigo-600 px-4 py-4 mt-4 text-center w-2/3 rounded-lg text-white sm:max-w-xl">
+                <a href={`http://bryanwills.xyz:3000/${linkId}`}>{`http://bryanwills.xyz:3000/${linkId}`}</a>
               </div>
           </div>
         )}
